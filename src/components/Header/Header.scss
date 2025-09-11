@@ -1,0 +1,23 @@
+.header{
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    height: 40px;
+}
+.header nav {
+    display: flex;
+    gap: 57px;
+}
+.header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
