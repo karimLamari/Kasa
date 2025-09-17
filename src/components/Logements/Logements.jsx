@@ -7,7 +7,8 @@ const Logements = () => {
   return (
     <div className="logements">
       {logements.map((logement) => (
-        <Card 
+        <Card
+          id={logement.id}
           key={logement.id}
           title={logement.title}
           cover={logement.cover}

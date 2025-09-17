@@ -1,0 +1,41 @@
+.slideshow {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    position: relative;
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        transition: opacity 0.5s ease-in-out;
+    }
+    &__prev {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+    }
+    &__next {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+    }
+    &__counter {
+        position: absolute;
+        bottom: 5px;
+        right: 50%;
+        color: white;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+}

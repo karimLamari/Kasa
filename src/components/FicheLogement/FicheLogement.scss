@@ -1,0 +1,50 @@
+.fiche-logement {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            color: #FF6060;
+        }
+    }
+
+    &__host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        &__image {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+    }
+
+    &__dropdowns {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}

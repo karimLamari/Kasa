@@ -1,0 +1,37 @@
+.dropdown__container{
+    margin-bottom:30px;
+}
+
+.dropdown{
+    display: flex;
+    width: 40vw;
+    margin:0 auto;
+    background-color: #FF6060;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    color: white;
+    line-height:14.3%;
+
+    &__icon{
+        font-size: 30px;
+        color: white;
+        transition: transform 0.3s ease;
+    
+        &.open{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.dropdown__content{
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        width: 40vw;
+        margin:0 auto;
+        padding: 20px;
+    }
