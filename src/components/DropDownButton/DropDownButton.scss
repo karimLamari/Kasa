@@ -1,6 +1,3 @@
-.dropdown__container{
-    margin-bottom:30px;
-}
 
 .dropdown{
     display: flex;
@@ -15,7 +12,6 @@
     font-size: 24px;
     color: white;
     line-height:14.3%;
-
     &__icon{
         font-size: 30px;
         color: white;
@@ -27,11 +23,22 @@
     }
 }
 
-.dropdown__content{
-        color: black;
-        font-size: 16px;
-        font-weight: 500;
-        width: 40vw;
-        margin:0 auto;
-        padding: 20px;
-    }
+.dropdown__content {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 20px;
+    overflow: hidden;
+    height:0;
+  opacity: 0;
+  transform: translateY(-20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+  }
+}

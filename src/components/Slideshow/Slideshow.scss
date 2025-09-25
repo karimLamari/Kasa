@@ -18,7 +18,8 @@
         color: white;
         background-color: transparent;
         border: none;
-        font-size: 2rem;
+        font-size: 5rem;
+        transform: translateY(-50%);
     }
     &__next {
         position: absolute;
@@ -27,7 +28,9 @@
         color: white;
         background-color: transparent;
         border: none;
-        font-size: 2rem;
+        font-size: 5rem;
+                transform: translateY(-50%);
+
     }
     &__counter {
         position: absolute;

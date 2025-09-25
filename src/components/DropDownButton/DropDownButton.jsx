@@ -16,11 +16,9 @@ const DropDown = ({title ,content}) => {
                 {title}
                 <RiArrowDropDownLine className={`dropdown__icon ${isOpen ? 'open' : ''}`} />
             </button>
-        {isOpen && (
-            <div className="dropdown__content">
+            <div className={`dropdown__content ${isOpen ? 'open' : ''}`}>
                 {content}  
             </div>
-        )}
         </div>
     );
 };
