@@ -6,14 +6,12 @@ import bannerAccueil from '../assets/images/accueil.png';
 
 const Home = () => {
     return (
-        <div>
-            <Header/>
+        <div className="home">
             <Banner 
                 image={bannerAccueil}
                 text="Chez vous, partout et ailleurs"
             /> 
             <Logements/>
-            <Footer/>
         </div>
     );
 };

@@ -1,6 +1,15 @@
 .logements{
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:22px;
     justify-content: center;
+    padding-top:50px;
+}
+@media screen and (max-width: 810px) {
+    .logements{
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+    }
+    
 }

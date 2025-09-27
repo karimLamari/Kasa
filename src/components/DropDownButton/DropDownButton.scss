@@ -1,25 +1,24 @@
 
+.dropdown__container{
+  width:100%
+}
 .dropdown{
+  position: relative;
     display: flex;
-    width: 40vw;
     margin:0 auto;
     background-color: #FF6060;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 5px;
     border-radius: 5px;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
-    line-height:14.3%;
     &__icon{
         font-size: 30px;
         color: white;
         transition: transform 0.3s ease;
-    
-        &.open{
-            transform: rotate(180deg);
-        }
+        transform: rotate(180deg);
     }
 }
 
@@ -27,18 +26,26 @@
   color: black;
   font-size: 16px;
   font-weight: 500;
-  width: 40vw;
   margin: 0 auto;
   padding: 20px;
-    overflow: hidden;
-    height:0;
-  opacity: 0;
+  overflow: hidden;
   transform: translateY(-20px); 
   transition: opacity 0.3s ease, transform 0.3s ease;
 
-  &.open {
-    opacity: 1;
-    transform: translateY(0);
-    height: auto;
+}
+details[open] .dropdown__content {
+  transform: translateY(0);
+}
+details[open] .dropdown__icon {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 800px) {
+  .dropdown{
+    width: 100%;
+    font-size:13px;
+  }
+  .dropdown__content {
+    width: 100%;
   }
 }

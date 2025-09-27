@@ -1,4 +1,3 @@
-import React from 'react';
 import './FicheLogement.scss';
 import { useParams } from 'react-router-dom';
 import logements from '../../assets/data/data.json';

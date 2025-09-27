@@ -1,25 +1,21 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './DropDownButton.scss';
 import { RiArrowDropDownLine } from "react-icons/ri";
 
+const DropDown = ({ title, content }) => {
 
 
-const DropDown = ({title ,content}) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    };
+
     return (
-        <div className="dropdown__container">
-            <button className="dropdown" onClick={toggleDropdown}>
+        <details className="dropdown__container">
+            <summary className="dropdown">
                 {title}
-                <RiArrowDropDownLine className={`dropdown__icon ${isOpen ? 'open' : ''}`} />
-            </button>
-            <div className={`dropdown__content ${isOpen ? 'open' : ''}`}>
-                {content}  
+                <RiArrowDropDownLine className="dropdown__icon" />
+            </summary>
+            <div className="dropdown__content">
+                {content}
             </div>
-        </div>
+        </details>
     );
 };
 

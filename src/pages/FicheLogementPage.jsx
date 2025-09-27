@@ -5,9 +5,7 @@ import Footer from '../components/Footer/Footer.jsx';
 const FicheLogementPage = () => {
     return (
         <div>
-            <Header/>
             <FicheLogement/>
-            <Footer/>
         </div>
     )
       
