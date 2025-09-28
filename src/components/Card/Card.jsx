@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Card({id,title, cover }) {
   return (
-    <div>
+    <div className="card__container">
       <Link to={`/logement/${id}`} key={id} className='card'>
         <img src={cover} alt={title} className="card__image" />
         <div className="card__overlay">

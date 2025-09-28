@@ -8,7 +8,7 @@
 }
 
 body {
-    padding: 0 50px;
+    padding: 0 100px;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     max-width: 1440px;
@@ -19,8 +19,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    gap: 50px;
     padding-top: 45px;
+    gap:50px;
 }
 
 .content {
@@ -36,7 +36,7 @@ body {
 .home {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap:50px;
 }
 
 
