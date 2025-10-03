@@ -31,31 +31,37 @@
   width: 85%;
   margin: 0 auto;
   max-height: 0;
+  padding: 20px;
   opacity: 0;
-  transform: translateY(-30px);
-  transition: opacity 0.3s ease, transform 0.2s ease;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease, max-height 0.3s ease;
 
   &.open {
     opacity: 1;
     transform: translateY(0);
-    max-height: 500px;
+    max-height: 1000px; 
     padding: 20px;
-
   }
 }
 
 @media screen and (max-width: 767px) {
   .dropdown {
-    width:100%;
-    font-size:13px;
+    width: 100%;
+    font-size: 13px;
     padding: 5px 10px;
 
     &__icon {
       font-size: 20px;
     }
+    
     &__content {
       width: 100%;
+      font-size: 12px;
+      
+      &.open {
+        padding: 10px 15px;
+      }
     }
   }
-
 }
