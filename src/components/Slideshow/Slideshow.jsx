@@ -1,4 +1,3 @@
-import React from 'react';
 import './Slideshow.scss';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useState } from 'react';
