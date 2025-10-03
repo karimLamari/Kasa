@@ -24,14 +24,12 @@ body {
 }
 
 .content {
-    flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;;
 }
 
-.apropos {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+
 
 .home {
     display: flex;
@@ -48,13 +46,8 @@ body {
     body {
         padding: 0 20px;
     }
-
     .app {
         gap: 27px;
         padding-top: 20px;
-    }
-
-    .apropos {
-        gap: 20px;
     }
 }

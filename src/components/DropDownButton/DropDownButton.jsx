@@ -5,7 +5,7 @@ import arrow from '../../assets/images/arrow.png';
 
 
 
-const DropDown = ({title ,content}) => {
+const DropDownButton = ({title ,content}) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -23,4 +23,4 @@ const DropDown = ({title ,content}) => {
     );
 };
 
-export default DropDown;
+export default DropDownButton;

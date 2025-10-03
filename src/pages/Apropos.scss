@@ -1,0 +1,21 @@
+.apropos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    
+    .dropdown__container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .apropos {
+        gap: 20px;
+        
+        .dropdown__container {
+            width: 100%;
+        }
+    }
+}
