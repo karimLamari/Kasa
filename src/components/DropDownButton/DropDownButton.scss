@@ -35,13 +35,12 @@
   overflow: hidden;
   transform: translateY(-10px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease, max-height 0.3s ease;
-  padding: 20px;
-
 
   &.open {
     opacity: 1;
     transform: translateY(0);
-    max-height: 1000px;
+    max-height: 1000px; 
+    padding: 20px;
   }
 }
 
@@ -54,11 +53,11 @@
     &__icon {
       font-size: 20px;
     }
-
+    
     &__content {
       width: 100%;
       font-size: 12px;
-
+      
       &.open {
         padding: 10px 15px;
       }
